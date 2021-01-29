@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9fafb;
+  font-family: 'Yusei Magic', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("paper.jpg");
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(80, 57, 124, 0.7);
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.form {
+  padding: 30px 40px;
+  font-family: 'Yusei Magic', sans-serif;
+  color: rgb(98, 37, 133);
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  
+  color: rgb(97, 65, 105);  
+}
+
+.form-control label {
+  color: rgb(97, 65, 105);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: #a54cee;
+  border: 0px;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  font-family: 'Yusei Magic', sans-serif;
+  outline:none;
+  
+  box-shadow: 0 8px rgb(152, 116, 187);
+  background-image: url("paper7.jpg");
+}
+
+.form button:hover  {
+background-image: url("paper5.jpg");
+border: 0px;}
+
+.form button:active {
+  background-image: url("paper6.jpg");
+            box-shadow: 0 6px rgb(151, 120, 163);
+            transform: translateY(9px);
+}
+
+::placeholder {
+  font-family: 'Yusei Magic', sans-serif;
+  color: rgb(131, 115, 168);
+}
