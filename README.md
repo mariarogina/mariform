@@ -1,7 +1,8 @@
-## Form Validator 
-Simple client side form validation. Check requird, length, email and password match
+https://mariarogina.github.io/mariform/
 
-## Project Specifications
+
+Form Validator 
+Simple client side form validation. Check requird, length, email and password match
 
 - Create form UI
 - Show error messages under specific inputs
